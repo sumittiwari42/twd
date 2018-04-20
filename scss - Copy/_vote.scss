@@ -1,0 +1,387 @@
+/* voteforteam css */
+.modal, .modal-open {
+	padding-right:0px ! important;
+}
+
+#votemodal {
+	top: 50%;
+	transform: translateY(-50%);
+
+	overflow: visible;
+	@media screen and (max-width: 767px) {
+		top:20px;
+		transform: none;
+	}
+}
+
+#voteotp {
+	a.resendanchor {
+		display: block;
+		margin: 15px 0 10px;
+		text-decoration: none;
+		color: #f36072;
+		font-family: 'Lato', sans-serif;
+		font-weight: 300;
+	}
+}
+
+#votemodal .modal-dialog {
+	width: 100%;
+	margin: 0px auto;
+	max-width: 900px;
+	padding: 0 15px;
+}
+
+.modal-content {
+	border-radius:0;
+}
+
+.voteforteam {
+	z-index:1;
+	position:relative;
+	p {
+		margin: 30px auto 30px;
+		text-align: center;
+		line-height: 1.8;
+		font-weight:300;
+	}
+
+	p.otptimer {
+		margin: 0px;
+		color:#000;
+	}
+
+	.votesubmit {
+		display:none;
+	}
+
+	button.close {
+		z-index: 10;
+		position: absolute;
+		right: 10px;
+		top: 10px;
+		color: #f36072;
+		font-size: 24px;
+		border: 1px solid #f36072;
+		opacity: 1;
+		border-radius: 50%;
+		padding: 2px 7px;
+		outline:none;
+		&:focus {
+			outline:none;
+		}
+	}
+
+	.otpforteam {
+		padding: 40px 80px;
+
+		@media screen and (max-width: 767px) {
+			padding: 20px;
+			padding-top: 40px;
+		}
+	}
+
+	p.otpteam {
+		margin-top:0px;
+		font-weight:300;
+	}
+
+	.otppage {
+		text-align:center;
+	}
+
+
+	.regisimagesfloatingvote {
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: -1;
+		height: 100%;
+		width: 100%;
+		background-image: url('../images/checks2.png'),
+		url('../images/thankyoucar.png');
+		background-position: 0px 0px;
+		background-repeat:   no-repeat,
+		no-repeat;
+		background-position: left 0 top 0,
+		right 0 bottom 0;
+		background-size: 10%, 18%;
+		@media only screen and (max-width:767px) {
+			background-size: 20%, 25%;
+			background-position: left 0 top 0,
+			right 0 bottom 30px;
+		}
+	}
+
+	/* corporate regis page css */
+	.voteformpage {
+		margin: 0 auto;
+		margin-bottom: 40px;
+		max-width: 900px;
+		
+		#voteform {
+			.regisinput {
+				text-align:left;
+			}
+		}
+	}
+
+	/* submit btn css */
+	#voteform {
+		.contsubmit {
+			display: none;
+		}
+	}
+
+
+
+
+	.votediv1 {
+		width:50%;
+		display: inline-block;
+		float:left;		
+		padding: 50px 0;
+		text-align:center;
+		border-right: 2px solid rgba(117, 117, 117, 0.18);
+
+		@media only screen and (max-width:767px) {
+			width:100%;
+			text-align:center;
+			float:none;
+			padding: 0;
+			border-right: 0;
+			padding-bottom: 40px;
+			border-bottom: 2px solid rgba(117, 117, 117, 0.18);
+		}
+
+		.voteh2 {
+
+			font-family: 'Impact', 'sans serif';
+			text-transform: capitalize;
+			font-size:32px;
+			margin: 25px auto 0px;
+
+			@media only screen and (min-width:768px) and (max-width:1024px) {
+				font-size:28px;
+			}
+
+			@media only screen and (max-width:767px) {
+				font-size:24px;
+			}
+
+		}
+
+		img {
+			margin:0 auto;
+		}
+	}
+
+	.votediv2 {
+		padding: 80px 0 0 50px;
+		width:50%;
+		display: inline-block;
+		float:left;
+		padding-left:80px;
+
+		@media only screen and (max-width:767px) {
+			width:100%;
+			text-align:center;
+			float:none;
+			padding-left: 0;
+			padding: 45px 0 0 0;
+		}
+		@media only screen and (min-width:768px) and (max-width:1024px) {
+			padding-left:60px;
+			padding-right: 50px;
+		}
+	}
+
+	/* input styling css */
+	.regisinput {
+		position: relative;
+		font-family: 'Lato', sans-serif;
+		input {
+			display: block;
+			position: relative;
+		}
+		label.error {
+			position:absolute;
+			color:red;font-size: 12px;
+			padding-top: 2px;
+		}
+	}
+
+	a.tabbtn {
+		border: 1px solid #f16075;
+		background: #fff;
+		color: #f16075;
+		min-width: 200px;
+		text-align: center;
+		cursor:pointer;
+		min-height: 35px;
+		font-family: 'Lato', sans-serif;
+		text-transform: uppercase;
+		-webkit-transition: all 0.4s ease;
+		-o-transition: all 0.4s ease;
+		transition: all 0.4s ease;
+		display: inline-block;
+		outline:none;
+		text-decoration: none;
+		@media only screen and (max-width:1024px) {
+			background: #f16075;
+			color: #fff;
+		}
+
+		@media screen and (max-width: 767px) {
+			margin: 0 auto;
+			margin-bottom: 20px;
+			width: 200px;
+			display: block;
+		}
+
+		span {
+			line-height: 35px;
+			font-size: 14px;
+			color:#f16075;				
+			letter-spacing: 1px;
+			padding:0 20px;
+
+
+
+			&:after {
+				content:'\f178';
+				font-family:FontAwesome;
+				padding-left:8px;
+				position:relative;
+				left: 0;
+				-webkit-transition: all 0.8s ease;
+				-o-transition: all 0.8s ease;
+				transition: all 0.8s ease;
+			}
+
+			@media only screen and (max-width:1024px) {
+				color: #fff;
+			}
+		}
+	}
+
+	a.tabbtn:hover {
+
+		background-color: #f16075;
+		color: #fff;
+		span {
+			color:#fff;
+
+
+			&:after {
+				left:10px;
+				-webkit-transition: all 0.8s ease;
+				-o-transition: all 0.8s ease;
+				transition: all 0.8s ease;
+			}
+		}
+	}
+
+
+
+
+
+
+
+	/* contactus floating image css */
+	.divforimagebg {
+		position:relative;
+		z-index: 5;
+		.regisimagesfloating {
+			position: absolute;
+			top: 0;
+			left: 0;
+			z-index: -1;
+			height: 100%;
+			width: 100%;
+			background-image: url('../images/checkssmallflip.png'),
+			url('../images/checkssmall.png'),;
+			background-position: 0px 0px;
+			background-repeat:   no-repeat,
+			no-repeat;
+			background-position: left 0 top 0px,
+			right 0 bottom 0;
+			background-size: 8%, 8%;
+
+			@media only screen and (max-width:767px) {
+				background-size: 18%, 18%;
+			}
+		}
+
+	}
+
+
+	/* voteforteam input fields image css */
+
+
+
+	.regiinputrow2 {
+		display:block;
+
+		.regisinput {
+			width:100%;
+			display: inline-block;
+			margin-bottom:40px;
+
+			input, select, textarea {
+				width:100%;
+				height: 50px;
+				padding:0 20px;
+				color:#757575;
+				border:1px solid #f6bd4e;
+
+				@media only screen and (max-width:991px) {
+					font-size:14px;
+				}
+
+				&:focus {
+					outline: none;
+					-webkit-box-shadow:none;
+					box-shadow:none;
+					border:1px solid #f16075;
+					-webkit-box-sizing:border-box;
+					box-sizing:border-box;
+				}
+			}
+
+
+			textarea.msgbox {
+				height: auto;
+				resize: none;
+				padding: 15px 20px;
+			}
+
+
+		}
+	}
+
+
+	.otppage {
+		.regisinput {
+			max-width:350px;
+			margin:0 auto;
+
+			input {
+				margin-bottom: 30px;
+			}
+
+			label.error {
+				left: 0;
+				bottom: 15px;
+			}
+
+			@media only screen and (max-width:767px) {
+				max-width:250px;
+				margin:0 auto;
+			}
+		}
+	}
+
+}
+
+	/* voteforteam css ends */

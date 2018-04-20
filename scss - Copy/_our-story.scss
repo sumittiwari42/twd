@@ -1,0 +1,201 @@
+.our-story {
+	.twd-para {
+		@media screen and (min-width: 1680px) {
+		  font-size: 18px;
+			line-height: 28px;
+		}
+	}
+	.image-open-animation {
+		width: 270px;
+		@media screen and (min-width: 1680px) {
+			width: 400px;
+		}
+	}
+	.first-wrapp {
+		margin-bottom: 30px;
+
+		@media screen and (min-width: 1680px) {
+			.twd-para {
+				font-size: 22px;
+				line-height: 40px;
+				margin-top: 90px;
+			}
+		}
+
+		.twd-para {
+			margin-top: 60px;
+			@media screen and (max-width: 680px) {margin-top: 0px;}
+		}
+	}
+	.twd-para {
+		@media screen and (max-width: 680px) {text-align: center;}
+	}
+	.inner-box {
+		.para-center {text-align: center;}
+
+		@media screen and (max-width: 680px) {
+			padding: 0 0 20px;
+		}
+
+		.left-box {
+			float: left;
+			width: 60%;
+
+			@media screen and (max-width: 680px) {
+				width: 95%;
+				float: none;
+				text-align: center;
+			}
+		}
+
+		.right-box {
+			float: left;
+			width: 40%;
+			@media screen and (max-width: 680px) {
+				width: 100%;
+				float: none;
+			}			
+		}
+	}
+
+	.box-heading {
+		padding: 0 20px;
+		@media screen and (max-width: 680px) {
+			padding: 0;
+			text-align: center;
+			margin: 0;
+		}
+		span {
+			text-transform: inherit;
+		}
+	}
+
+	.twd-para {
+		padding: 0 20px;
+		line-height: 24px;
+	}
+
+	.our-location-image {
+		img {
+			width: 100%;
+		}
+	}
+
+	/*Black back section*/
+	.our-black-back {
+		background: #000;
+		padding: 7% 0;
+		@media screen and (min-width: 1680px) {
+     padding: 10% 0;
+		}
+
+		.black-content {
+			width: 80%;
+			margin: 0 auto;
+
+			p {
+				font-family: impact;
+				color:  #fff;
+				font-size: 24px;
+				font-weight: 400;
+				letter-spacing: 0.75px;
+				line-height: 34px;
+				text-align: center;
+
+				@media screen and (min-width: 1680px) {
+					font-size: 36px;
+					line-height: 46px;
+				}
+			}
+		}
+	}
+
+	/*car animation*/
+		.car-animation {
+		  width: 380px;
+		  float: right;
+		  display: inline-block;
+		  background: #17606e;;
+		  padding: 35px 0px 25px;
+
+		  @media screen and (max-width: 680px) {width: 350px;}
+
+		  @media screen and (min-width: 1680px) {
+		  	width: 560px;
+		  }
+
+		  @media screen and (max-width: 980px) {
+		  	width: 250px;
+		  }
+
+		  @media screen and (max-width: 680px) {
+		  	float: none;
+		  }
+      
+      img {width: 100%;}
+		}
+
+		.in-view .car-out {
+		  position: relative;
+		  @include animation(car, $animation_duration: 2s, $animation_delay: null, $animation_iteration_count: null);
+		  animation-fill-mode: forwards;
+		  -webkit-animation-fill-mode: forwards;
+		  -moz-animation-fill-mode: forwards;
+		}
+
+		@include keyframes(car) {
+		  0% {
+		   left: 20px;
+		  }
+		  100% {
+		   left: -100px;
+		  }
+		}	
+
+		@media screen and (max-width: 680px) {
+		@include keyframes(car) {
+		  0% {
+		   left: 100px;
+		  }
+		  100% {
+		   left: -12px;
+		  }
+		}	
+		}
+
+		.car-ani-wrapp {
+			overflow: hidden;
+			.twd-para {
+				@media screen and (min-width: 1680px) {
+					font-size: 17px;
+				}
+			}
+			.right-box {
+				padding: 25px 0;
+		    @media screen and (max-width: 680px) {
+					text-align: center;
+				}				
+			}
+			.twd-para {
+				padding: 0 20px;
+				@media screen and (max-width: 980px) {
+					padding: 0 55px 0 0;
+				}
+
+				@media screen and (max-width: 680px) {
+					padding: 0 0px 0 0;
+				}
+			}
+
+			.twd-btn {
+				margin: 20px 0px 0 20px;
+				@media screen and (max-width: 680px) {
+					margin-top: 20px;
+				}
+			}
+		}
+
+		.car-gif {text-align: center;}
+}
+
+.car-ani-wrapp .twd-para {width: 85%;}

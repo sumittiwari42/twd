@@ -1,0 +1,97 @@
+.motion-even {
+	h2 {
+		font-size: 56px;
+		color: red;
+		position: relative;
+		display: inline-block;
+
+		&:after {
+			content: '';
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			top: 0;
+			right: 0;
+			background: #fff;
+			transition: all 3s linear;
+		}
+	}
+}
+
+.motion-even.in-view {
+  h2 {
+		&:after {
+			width: 0%;
+			transition: all 2s linear;
+		}
+  }
+}
+
+.motion-odd {
+	h2 {
+		font-size: 56px;
+		color: red;
+		position: relative;
+		display: inline-block;
+
+		&:after {
+			content: '';
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			top: 0;
+			left: 0;
+			background: #fff;
+			transition: all 2s linear;
+		}
+	}
+}
+
+.motion-odd.in-view {
+  h2 {
+		&:after {
+			width: 0%;
+			transition: all 2s linear;
+			transition-delay: 2s;
+		}
+  }
+}
+
+.motion-even {
+	img {
+		width: 100%;
+	}
+}
+
+.animation-test {
+	position: relative;
+
+	&:after {
+		content: ' ';
+		width: 100%;
+		height: 20%;
+		position: fixed;
+		bottom: 0;
+		left: 0;
+		background: #f9f9f9;
+		box-shadow: 0px 1px 90px 52px #f9f9f9c9;
+	}
+
+	&:before {
+    content: ' ';
+    width: 100%;
+    height: 40%;
+    position: absolute;
+    top: 20%;
+    right: 0;
+    background: #f9f9f9;
+    box-shadow: -56px 0px 112px 128px #f9f9f9c9;
+	}
+}
+
+.animation-test.in-view {
+	&:before {
+		width: 0%;
+		transition: all 6s linear;
+	}
+}

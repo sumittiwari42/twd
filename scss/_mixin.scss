@@ -1,0 +1,163 @@
+//padding mixing
+
+@mixin padding($values...) {    
+    @each $var in $values {
+        padding: #{$var};
+    }
+}
+
+//margin mixing
+
+@mixin margin($values...) {    
+    @each $var in $values {
+        margin: #{$var};
+    }
+}
+
+//border mixing
+
+@mixin border($values...) {    
+    @each $var in $values {
+        margin: #{$var};
+    }
+}
+
+//position mixing
+@mixin position($position, $top: null, $right: null, $bottom: null, $left: null) {
+  position: $position;
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+}
+
+//box mixing
+@mixin box($display, $width: null, $height: null, $background: null) {
+	display: $display;
+  width: $width;
+  height: $height;
+  background: $background;
+}
+
+//linking mixing
+@mixin linx ($link, $visit, $hover, $active) {
+  a {
+    color: $link;
+    &:visited {
+      color: $visit;
+    }
+    &:hover {
+      color: $hover;   
+    }
+    &:active {
+      color: $active;
+    }
+  }
+}
+
+//grid mixing
+@mixin grid($num) {
+  width: 100% / $num;
+  height: auto;
+  float: left;
+  padding: 0px 20px;
+}
+
+
+//video responsive 
+
+@mixin video_parent() {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+}
+
+@mixin video_frame() {
+	  position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+//background
+@mixin background($imgpath,$position:0 0,$repeat: no-repeat) {
+    background: {
+        image: url($imgpath);
+        position: $position;
+        repeat: $repeat;
+    }
+}
+
+
+//animation 
+@mixin animation($animation_name, $animation_duration: null, $animation_delay: null, $animation_iteration_count: null) {
+	animation: $animation_name $animation_duration $animation_delay $animation_iteration_count;
+	-webkit-animation: $animation_name $animation_duration $animation_delay $animation_iteration_count;
+	-moz-animation: $animation_name $animation_duration $animation_delay $animation_iteration_count;
+}
+
+//media
+
+@mixin large-desktop {
+  @media only screen and (max-width: 2680px) {
+    @content;
+  }
+}
+
+
+@mixin desktop {
+  @media only screen and (max-width: 1680px) {
+    @content;
+  }
+}
+
+@mixin mini-desktop {
+  @media only screen and (max-width: 980px) {
+    @content;
+  }
+}
+
+@mixin tab {
+  @media only screen and (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media only screen and (max-width: 480px) {
+    @content;
+  }
+}
+
+
+@mixin det ($color, $font-size, $font-weight: 400) { 
+   color: $color;
+   font-size: $font-size;  
+   font-weight: $font-weight;
+}
+ 
+@mixin anim($s:0.2s){
+  transition: all $s ease-in-out;
+  -webkit-transition: all $s ease-in-out;
+  -moz-transition: all $s ease-in-out;
+  -o-transition: all $s ease-in-out;
+  -ms-transition: all $s ease-in-out;
+}  
+
+//keyframes mixixng
+
+@mixin keyframes($name) {
+  @-webkit-keyframes #{$name} {
+    @content;
+  }
+
+  @-moz-keyframes #{$name} {
+    @content;
+  }
+
+  @keyframes #{$name} {
+    @content;
+  }
+}

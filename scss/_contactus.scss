@@ -1,0 +1,773 @@
+/* contactus css */
+
+
+.contactreplica {
+
+	.contbottombtns {
+		margin-bottom: 20px;
+		margin-top: 50px;
+
+		@media screen and (max-width: 991px) {
+			margin-bottom: 30px;
+		}
+
+		.first {
+			display: inline-block;
+			float: left;
+			padding-right:30px;
+
+			p {
+				font-weight:600;
+				letter-spacing: 1px;
+				@media screen and (min-width: 992px) {
+					position: relative;
+					top: 10px;
+				}
+
+			}
+
+			@media screen and (max-width: 991px) {
+				width: 100%;
+				float: none;
+				text-align: center;
+				padding-right:0px;
+			}
+
+		}
+
+		.second {
+			width: 53%;
+			display: inline-block;
+			float: left;
+			text-align: center;
+
+			@media screen and (max-width: 991px) {
+				width: 100%;
+				float: none;
+				margin: 30px auto 0;
+				text-align: center;
+			}
+
+			a {
+				&:first-child {
+					margin-right: 50px;
+
+					@media screen and (max-width: 1140px) {
+						margin-right: auto;
+					}
+				}
+			}
+
+		}
+	}
+	
+	a.tabbtn {
+		border: 1px solid #f16075;
+		background: #fff;
+		color: #f16075;
+		min-width: 200px;
+		text-align: center;
+		font-family: 'Lato', sans-serif;
+		cursor:pointer;
+		min-height: 40px;
+		text-transform: uppercase;
+		-webkit-transition: all 0.4s ease;
+		-o-transition: all 0.4s ease;
+		transition: all 0.4s ease;
+		display: inline-block;
+		outline:none;
+		text-decoration: none;
+		@media only screen and (max-width:1024px) {
+			background: #f16075;
+			color: #fff;
+		}
+
+		@media screen and (max-width: 991px) {
+			margin: 0 auto;
+			margin-bottom: 20px;
+			width: 200px;
+			display: block;
+		}
+
+		span {
+			line-height: 40px;
+			font-size: 14px;
+			color:#f16075;				
+			letter-spacing: 1px;
+			padding:0 20px;
+
+
+
+			&:after {
+				content:'\f178';
+				font-family:FontAwesome;
+				padding-left:8px;
+				position:relative;
+				left: 0;
+				-webkit-transition: all 0.8s ease;
+				-o-transition: all 0.8s ease;
+				transition: all 0.8s ease;
+			}
+
+			@media only screen and (max-width:1024px) {
+				color: #fff;
+			}
+		}
+	}
+
+	a.tabbtn:hover {
+
+		background-color: #f16075;
+		color: #fff;
+		span {
+			color:#fff;
+
+
+			&:after {
+				left:10px;
+				-webkit-transition: all 0.8s ease;
+				-o-transition: all 0.8s ease;
+				transition: all 0.8s ease;
+			}
+		}
+	}
+}
+
+.contactuspage {
+
+	z-index:1;
+	position:relative;
+
+
+	/* corporate regis page css */
+	.corporateformpage {
+		margin-bottom:40px;
+		p {
+			margin: 30px auto 40px;
+			text-align: center;
+			line-height: 1.8;			
+			font-weight:300;
+		}
+		#corporateform {
+			text-align:center;
+			max-width: 900px;
+			margin: 0 auto;
+			.regisinput {
+				text-align:left;
+			}
+		}
+	}
+
+	.regisselectform {
+		position: relative;
+		&:after {
+			content: '\f107';
+			position: absolute;
+			right: 15px;
+			top: 0;
+			color: #f16075;
+			line-height: 50px;
+			font-size: 23px;
+			z-index: -1;
+			font-family: FontAwesome;
+		}
+	}
+
+	/* submit btn css */
+	#contactform, #corporateform {
+		.contsubmit {
+			display: none;
+		}
+	}
+	/* input styling css */
+	.regisinput {
+		font-family: 'Lato', sans-serif;
+		position: relative;
+		input {
+			display: block;
+			position: relative;
+		}
+		label.error {
+			position: absolute;
+			color: red;
+			display: block;
+			font-size: 12px;
+			padding-top: 2px;
+		}
+
+		@media only screen and (max-width: 991px) {
+
+			width:100%;
+			margin-right: 0;
+			float: none;
+		}
+		&:last-child {
+			margin-right: 0;
+		}
+
+		input,
+		select {
+			width: 100%;
+			height: 50px;
+			color: #757575;
+			padding: 0 20px;			
+			font-size: 12px;
+			color: #757575;
+			border: 1px solid #f6bd4e;
+			font-family: 'Lato', sans-serif;
+
+			@media only screen and (max-width: 991px) {
+				font-size:12px;
+			}
+
+			&:focus {
+				outline: none;
+				-webkit-box-shadow: none;
+				box-shadow: none;
+				border: 1px solid #f16075;
+				-webkit-box-sizing: border-box;
+				box-sizing: border-box;
+			}
+		}
+
+		select {
+			color: #757575;
+			-webkit-appearance: none;
+			-moz-appearance: none;
+			background: none;
+			position: relative;
+			option {
+				color: #757575;
+				text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+			}
+		}
+
+		select:focus {
+			outline: none
+		}
+
+		select:visited {
+			outline: none
+		}
+
+		select:active {
+			outline: none
+		}
+
+		select::-ms-expand {
+			display: none
+		}
+	}
+
+	a.tabbtn {
+		border: 1px solid #f16075;
+		background: #fff;
+		color: #f16075;
+		min-width: 200px;
+		text-align: center;
+		font-family: 'Lato', sans-serif;
+		cursor:pointer;
+		min-height: 40px;
+		text-transform: uppercase;
+		-webkit-transition: all 0.4s ease;
+		-o-transition: all 0.4s ease;
+		transition: all 0.4s ease;
+		display: inline-block;
+		outline:none;
+		text-decoration: none;
+		@media only screen and (max-width:1024px) {
+			background: #f16075;
+			color: #fff;
+		}
+
+		@media screen and (max-width: 991px) {
+			margin: 0 auto;
+			margin-bottom: 20px;
+			width: 200px;
+			display: block;
+		}
+
+		span {
+			line-height: 40px;
+			font-size: 14px;
+			color:#f16075;				
+			letter-spacing: 1px;
+			padding:0 20px;
+
+
+
+			&:after {
+				content:'\f178';
+				font-family:FontAwesome;
+				padding-left:8px;
+				position:relative;
+				left: 0;
+				-webkit-transition: all 0.8s ease;
+				-o-transition: all 0.8s ease;
+				transition: all 0.8s ease;
+			}
+
+			@media only screen and (max-width:1024px) {
+				color: #fff;
+			}
+		}
+	}
+
+	a.tabbtn:hover {
+
+		background-color: #f16075;
+		color: #fff;
+		span {
+			color:#fff;
+
+
+			&:after {
+				left:10px;
+				-webkit-transition: all 0.8s ease;
+				-o-transition: all 0.8s ease;
+				transition: all 0.8s ease;
+			}
+		}
+	}
+	/* the divs css */
+	.contsecparent {
+		font-family: 'Lato', sans-serif;
+		margin: 70px auto;
+		width:100%;
+
+		@media screen and (max-width: 991px) {
+			margin: 30px auto;
+		}
+
+		.contsec1 {
+			width:66%;
+			display: inline-block;
+			-webkit-box-sizing:content-box;
+			box-sizing:content-box;
+			float:left;
+			margin-right:4%;
+			@media screen and (max-width: 991px) {
+
+				width:100%;
+				margin-right:0;
+			}
+
+			p {
+				margin: 20px auto 30px;
+				text-align:left;
+				line-height:1.8;
+				@media screen and (max-width: 991px) {
+					
+					text-align:center;
+				}
+
+				a {
+					color:#f16075;
+					text-decoration:none;
+					&:hover {
+						color:#f16075;
+					}
+				}
+			}
+
+			.tyh2 {
+				font-family: 'Impact', 'sans serif';
+				font-size: 60px;
+				color: #f6bd4e;
+				margin: 0px;
+				position: relative;
+				text-transform: uppercase;
+
+				@media only screen and (max-width:1024px) {
+					font-size: 40px;
+				}
+
+				@media only screen and (max-width:991px) {
+					text-align: center;
+				}
+				@media only screen and (max-width:767px) {
+					font-size: 40px;
+					text-align: center;
+					margin-left:-12px;
+				}
+
+
+				img {					
+					position: relative;
+					top: -3px;
+					display: inline-block;
+					height: 30px;
+					margin-right: -5px;
+
+					@media screen and (max-width: 767px) {
+						height: 25px;
+						margin-right: -3px;
+					}
+				}
+
+				span {
+
+					font-family: 'Impact', 'sans serif';
+					font-size: 60px;
+					color: #f36072;
+					margin: 0px;
+					position: relative;
+					text-transform: uppercase;
+					@media only screen and (max-width:1024px) {
+						font-size: 40px;
+					}
+					@media only screen and (max-width:767px) {
+						font-size: 40px;
+					}
+				}
+
+			}
+
+
+
+
+
+		}
+
+		.contsec2 {
+			width:30%;
+			display: inline-block;
+			-webkit-box-sizing:content-box;
+			box-sizing:content-box;
+			float:left;
+
+			@media screen and (max-width: 991px) {
+
+				width:100%;
+			}
+
+			.imagediv {
+				margin-top: 20px;
+
+				img {
+					width:100%;
+					height:auto;
+				}
+
+			}
+
+			.belowcontent {
+				padding-top: 15px;				
+
+				@media screen and (max-width: 991px) {
+
+					text-align: center;
+					padding-top: 30px;
+				}
+
+				ul {
+					li {
+						a {
+							text-decoration: none;
+							color:#333;
+							&:hover {
+								color:#f16075;
+							}
+						}
+					}
+				}
+
+				.conticos {
+					display: inline-block;
+					width: 40px;
+					float: left;position: relative;
+					top: -1px;
+				}
+
+
+				.phnnumbers {
+					display: inline-block;
+					width: calc(100% - 40px);
+					padding: 0 20px;
+					float: left;
+					text-align: left;
+
+					@media screen and (max-width: 767px) {
+						width: auto;
+						padding: 0 10px;
+					}
+
+
+					ul {
+						list-style: none;
+
+						li {
+
+							@media screen and (max-width: 1024px) {
+								font-size:14px;
+							}
+							padding-top: 8px;
+
+							a {
+								@media screen and (max-width: 1024px) {
+									font-size:14px;
+								}
+							}
+						}
+					}
+
+				}
+
+
+				.email {
+					display: inline-block;
+					width: calc(100% - 40px);
+					padding: 0 20px;
+					float: left;
+					text-align: left;
+
+					@media screen and (max-width: 767px) {
+						padding: 0 10px;
+					}
+
+					ul {
+						list-style: none;
+						li {
+							padding-top: 8px;
+
+							@media screen and (max-width: 1024px) {
+								font-size:14px;
+							}
+							a {
+								@media screen and (max-width: 1024px) {
+									font-size:14px;
+								}
+							}
+						}
+					}
+
+				}
+
+				.phonewrap {
+					display: inline-block;
+				}
+
+				.emailwrap {
+					margin-top:20px;
+					display: inline-block;
+				}
+
+
+			}
+
+		}
+	}
+
+
+	.contbottombtns {
+		margin-bottom: 70px;
+
+		@media screen and (max-width: 991px) {
+			margin-bottom: 30px;
+		}
+
+		.first {
+			display: inline-block;
+			float: left;
+			padding-right:30px;
+
+			p {
+				font-weight:600;
+				letter-spacing: 1px;
+				@media screen and (min-width: 992px) {
+					position: relative;
+					top: 10px;
+				}
+
+			}
+
+			@media screen and (max-width: 991px) {
+				width: 100%;
+				float: none;
+				text-align: center;
+				padding-right:0px;
+			}
+
+		}
+
+		.second {
+			width: 50%;
+			display: inline-block;
+			float: left;
+			text-align: center;
+
+			@media screen and (max-width: 991px) {
+				width: 100%;
+				float: none;
+				margin: 30px auto 0;
+				text-align: center;
+			}
+
+			a {
+				&:first-child {
+					margin-right: 50px;
+
+					@media screen and (max-width: 991px) {
+						margin-right: auto;
+					}
+				}
+			}
+
+		}
+	}
+
+
+	/* contactus floating image css */
+	.divforimagebg {
+		position:relative;
+		z-index: 5;
+		.regisimagesfloating {
+			position: absolute;
+			top: 0;
+			left: 0;
+			z-index: -1;
+			height: 100%;
+			width: 100%;
+			background-image: url('../images/steering.png'),
+			url('../images/checks.png'),;
+			background-position: 0px 0px;
+			background-repeat:   no-repeat,
+			no-repeat;
+			background-position: left 0 top 0px,
+			right 0 top 50%;
+			background-size: 18%, 8%;
+		}
+
+		.regisimagesfloatingcorporate {
+			position: absolute;
+			top: 0;
+			left: 0;
+			z-index: -1;
+			height: 100%;
+			width: 100%;
+			background-image: url(../images/corporate-registration.png);
+			background-position: 0px 0px;
+			background-repeat: no-repeat;
+			background-position: left 0 bottom 0px;
+			background-size: auto 55%;
+			@media only screen and (max-width:1200px) {
+
+				background:none;
+
+			}
+		}
+
+	}
+
+
+	/* contactus input fields image css */
+
+	.regishead {
+		font-family: 'Impact', 'sans serif';
+		font-size: 28px;
+		margin-bottom: 20px;
+		text-transform: uppercase;
+		color:#f6bd4e;
+		letter-spacing: 1px;
+		@media only screen and (max-width:991px) {
+			font-size: 24px;
+		}
+	}
+
+
+
+
+	.regiinputrow1 {
+		display:block;
+
+		.regisinput {
+			width:48%;
+			display: inline-block;
+			margin-right:4%;
+			float:left;
+			margin-bottom:40px;
+
+			@media only screen and (max-width:991px) {
+
+				width:100%;
+				margin-right:0;
+				float:none;
+
+			}
+
+			&:last-child {
+				margin-right:0;
+			}
+
+			input, select {
+				width:100%;
+				height: 50px;
+				padding:0 20px;
+				color:#757575;
+				border:1px solid #f6bd4e;
+
+				@media only screen and (max-width:991px) {
+					font-size:14px;
+				}
+
+				&:focus {
+					outline: none;
+					-webkit-box-shadow:none;
+					box-shadow:none;
+					border:1px solid #f16075;
+					-webkit-box-sizing:border-box;
+					box-sizing:border-box;
+				}
+			}
+
+		}
+	}
+
+
+	.regiinputrow2 {
+		display:block;
+
+		.regisinput {
+			width:100%;
+			display: inline-block;
+			margin-bottom:40px;
+
+			input, select, textarea {
+				width:100%;
+				height: 50px;
+				padding:0 20px;
+				color:#757575;
+				border:1px solid #f6bd4e;
+
+				@media only screen and (max-width:991px) {
+					font-size:14px;
+				}
+
+				&:focus {
+					outline: none;
+					-webkit-box-shadow:none;
+					box-shadow:none;
+					border:1px solid #f16075;
+					-webkit-box-sizing:border-box;
+					box-sizing:border-box;
+				}
+			}
+
+
+			textarea.msgbox {
+				height: auto;
+				resize: none;
+				padding: 15px 20px;
+				font-size: 12px;
+			}
+
+
+		}
+	}
+
+
+
+
+}
+
+	/* contactus css ends */

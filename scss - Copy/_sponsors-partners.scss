@@ -1,0 +1,32 @@
+.spon-content {
+	@media only screen and (min-width:768px) {
+		top: 50%;
+		position: absolute;
+		right: 0;
+		-webkit-transform: translateY(-50%);
+		-ms-transform: translateY(-50%);
+		transform: translateY(-50%);
+	}
+	@media only screen and (max-width:767px) {
+		margin-top: 25px;
+	}
+}
+.spon-height {
+	height: 50px;
+	@media only screen and (max-width:767px) {
+		height: 30px;
+	}
+}
+.spon-content-left {
+	@extend .spon-content;
+	@media only screen and (min-width:768px) {
+		left: 0;
+	}
+}
+
+/****** Our Partners *******/
+.spon-part {
+	img {
+		box-shadow: 0px 2px 10px #ccc;
+	}
+}

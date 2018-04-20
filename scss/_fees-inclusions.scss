@@ -1,0 +1,79 @@
+.fees-inc.page-wrap {
+	p {
+		font-size: 15px;
+		margin: 15px 0 25px;
+		line-height: 25px;
+		font-family: $body_font;
+		color: #000;
+		font-weight: normal;
+		@media screen and (max-width: 767px) {
+			font-size: 14px;
+		}
+	}
+	.custom-height {
+		height: 20px;
+	}
+}
+.oneline-content {
+	max-width: 930px;
+	width: 100%;
+	margin: 30px auto;
+	padding: 0 15px;
+	@media screen and (max-width: 767px) {
+		margin: 0 auto 30px;
+	}
+}
+
+.fees-box {
+	padding: 20px 14px 1px;
+	margin-bottom: 20px;
+	@include anim(0.5s);
+	@media screen and (max-width: 767px) {
+		margin-bottom: 25px;
+		box-shadow: 0px 2px 10px #ccc;
+	}
+	&:hover {
+		box-shadow: 0px 2px 10px #ccc;
+	}
+	img {
+		margin: 0 auto;
+	}
+}
+
+.last-div {
+	background-color: #ebebeb;
+	padding: 60px 0 40px;
+	@media screen and (max-width: 767px) {
+		padding: 35px 20px 25px;
+	}
+	h2 {
+		font-size: 20px;
+		margin-bottom: 20px;
+		font-family: $body_font;
+		@media screen and (max-width: 767px) {
+			font-size: 18px;
+		}
+	}
+	ul {
+		list-style: none;
+		li {
+			margin: 10px 0;
+			font-family: 'Lato', san-serif;
+			@media screen and (max-width: 767px) {
+				font-size: 14px;
+			}
+			&:before {
+				content: "\f111";
+				font-family: FontAwesome;
+				font-style: normal;
+				font-weight: normal;
+				text-decoration: inherit;
+				color: $red-head;
+				margin-right: 10px;
+				font-size: 9px;
+				top: -1px;
+				vertical-align: middle;
+			}
+		}
+	}
+}

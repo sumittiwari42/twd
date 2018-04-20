@@ -1,0 +1,369 @@
+/* voteforteam css */
+.winpage {
+	z-index:1;
+	position:relative;
+	p {
+		margin: 30px auto 30px;
+		text-align: center;
+		line-height: 1.8;
+		font-weight:300;
+	}
+
+	.awardtruckparent {
+		text-align:center;
+		.awardtrucknumbersection {
+			display:inline-block;
+			margin: 30px auto 70px;
+			@media only screen and (max-width:767px) {
+				margin: 20px auto 50px;
+			}
+			img.imagetruck {
+				padding-bottom:10px;
+			}
+			img.awardcheck1 {
+				display: inline-block;
+				position: relative;
+				top: -18px;
+			}
+			img.awardcheck2 {
+				display: inline-block;
+				position: relative;
+				top: -18px;
+			}
+			h2.awardh1 {
+				font-family: 'Impact', 'sans serif';
+				letter-spacing:2px;
+				color:#f05f74;
+				font-size:60px;
+				text-transform:uppercase;
+				text-align:center;
+				display:inline-block;
+				padding: 0 30px;
+			}
+			h2.awardh2 {
+				font-family: 'Impact', 'sans serif';
+				letter-spacing:10px;
+				font-size:60px;
+				text-transform:uppercase;
+				text-align:center;
+				@media only screen and (max-width:767px) {
+					font-size:32px;
+				}
+			}
+		}
+	}
+
+	.divforimagebg {
+		position:relative;
+		z-index: 5;
+
+		.regisimagesfloatingcorporate {
+			position: absolute;
+			top: 0;
+			left: 0;
+			z-index: -1;
+			height: 100%;
+			width: 100%;
+			background-image: url('../images/checks2.png'),
+			url('../images/road-car-path.png');
+			background-position: 0px 0px;
+			background-repeat:   no-repeat,
+			no-repeat;
+			background-position: left 0 top 0,
+			right 0 top 50%;
+			background-size: 10%, auto 40%;
+			@media only screen and (max-width:1024px) {
+				background-image: url('../images/checks2.png'),
+				none;
+				background-size: 20%, auto 40%;
+				background-position: left 0 top 0,
+				right 0 bottom 30%;
+
+			}
+		}
+
+	}
+
+
+
+	/* contactus floating image css */
+
+
+
+	.prizes {
+		margin-bottom:40px;
+		.prizeitem {
+			margin-bottom:50px;
+			@media screen and (max-width: 680px)
+			{
+				margin-bottom: 20px;
+			}
+			h3.city {
+				margin-left: 45px;
+				font-family: 'Impact', sans-serif;
+				text-transform: uppercase;
+				margin-top: 0px;
+				font-size: 18px;
+				@media only screen and (max-width:767px) {
+					margin-left: 23px;
+					font-size: 14px;
+				}
+			}
+			h3.worth {
+				font-family: 'Lato', sans-serif;
+				text-transform: capitalize;
+				margin-left: 45px;
+				margin-top:10px;
+				font-size: 25px;
+				i {
+					font-size:23px;
+					@media only screen and (max-width:767px) {
+						font-size:17px;
+					}
+				}
+				@media only screen and (max-width:767px) {
+					margin-left: 23px;
+					font-size: 18px;
+				}
+			}
+
+			&:last-child {
+				margin-bottom:0;
+			}
+
+			.in-view .first-animation {
+				animation: first-animation 2.5s;
+				-webkit-animation: first-animation 2.5s;
+				-moz-animation: first-animation 2.5s;
+			}
+
+			.in-view .third-animation {
+				animation: third-animation 2.5s;
+				-webkit-animation: third-animation 2.5s;
+				-moz-animation: third-animation 2.5s;
+			}
+
+			.in-view .five-animation {
+				animation: five-animation 2.5s;
+				-webkit-animation: five-animation 2.5s;
+				-moz-animation: five-animation 2.5s;
+			}
+
+			.shot-spot .direction {
+				width: 100%;
+				margin: 60px auto;
+				@media screen and (max-width: 680px)
+				{
+					margin: 30px 0;
+				}
+			}
+
+			.shot-spot .direction .direction-part {
+				width:33.33%;
+				float: left;
+				text-align: center;
+
+				.sub-head { 
+					text-transform:capitalize;
+				}
+
+				p {
+					font-family: 'Lato', sans-serif;
+					line-height: 1;
+					font-size:16px;
+					margin-top: 10px;
+					margin-bottom:0;
+
+					.fa-inr {
+						font-size:13px;
+					}
+				}
+
+
+				@media screen and (max-width: 680px)
+				{
+					width:100%;
+					margin-bottom:30px;
+
+					&:last-child {
+						margin-bottom:0px;
+					}
+				}
+
+			}
+
+			.box-heading .box-heading-first {
+				font-size:60px;
+			}
+			.box-heading .box-heading-second {
+				font-size:60px;
+			}
+
+			@media screen and (min-width: 1025px)
+			{
+				.box-heading .head-before {
+					top: -18px;
+				}
+			}
+			@media screen and (max-width: 1024px)
+			{
+				.box-heading .head-before img {
+					height: 18px;
+				}
+				.box-heading .box-heading-first {
+					font-size: 32px;
+				}
+
+				.box-heading .box-heading-second {
+					font-size: 32px;
+				}
+				.box-heading .head-before {
+					top: -8px;
+				}
+			}
+
+
+			@media screen and (max-width: 480px)
+			{
+
+				.box-heading .head-before {
+					top: -4px;
+				}
+				.box-heading .box-heading-first {
+					font-size: 18px;
+				}
+
+				.box-heading .box-heading-second {
+					font-size: 18px;
+				}
+			}
+
+		}
+	}
+
+	.direction-part h3.worth.lakhspara {
+		margin-left:0;
+	}
+
+}
+
+/* voteforteam css ends */
+
+.in-view.one1-animation { 
+	@include animation(one1-animation, $animation_duration: 5s, $animation_delay: null, $animation_iteration_count: null);
+}
+
+
+@include keyframes(one1-animation) {
+	0% {
+		opacity: 0;
+	}
+	20% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+.in-view.two2-animation { 
+	@include animation(two2-animation, $animation_duration: 5s, $animation_delay: null, $animation_iteration_count: null);
+}
+
+
+@include keyframes(two2-animation) {
+	0% {
+		opacity: 0;
+	}
+	20% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+.in-view.three3-animation { 
+	@include animation(three3-animation, $animation_duration: 5s, $animation_delay: null, $animation_iteration_count: null);
+}
+
+
+@include keyframes(three3-animation) {
+	0% {
+		opacity: 0;
+	}
+	20% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+.in-view.four4-animation { 
+	@include animation(four4-animation, $animation_duration: 5s, $animation_delay: null, $animation_iteration_count: null);
+}
+
+
+@include keyframes(four4-animation) {
+	0% {
+		opacity: 0;
+	}
+	20% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+.in-view.five5-animation { 
+	@include animation(five5-animation, $animation_duration: 5s, $animation_delay: null, $animation_iteration_count: null);
+}
+
+
+@include keyframes(five5-animation) {
+	0% {
+		opacity: 0;
+	}
+	20% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+.in-view.six6-animation { 
+	@include animation(six6-animation, $animation_duration: 5s, $animation_delay: null, $animation_iteration_count: null);
+}
+
+
+@include keyframes(six6-animation) {
+	0% {
+		opacity: 0;
+	}
+	20% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+.in-view.seven7-animation { 
+	@include animation(seven7-animation, $animation_duration: 5s, $animation_delay: null, $animation_iteration_count: null);
+}
+
+
+@include keyframes(seven7-animation) {
+	0% {
+		opacity: 0;
+	}
+	20% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 1;
+	}
+}

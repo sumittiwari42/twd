@@ -1,0 +1,227 @@
+.main-content {
+  .rules-content {
+  	background: #fff;
+  	width: 80%;
+  	margin: 30px auto;
+  	overflow: hidden;
+
+  	@media screen and (max-width: 680px) {
+  		width: 95%;
+  	}
+
+  	.accord-group {
+			position: relative;
+			border-bottom: 1px dashed #ccc;
+
+			.num {
+				position: absolute;
+				top: 0px;
+				font-size: 30px;
+				line-height: 30px;
+        font-weight: bold;
+        color: #fbcb3c;
+        display: none;
+        font-family: impact;
+        letter-spacing: 0.5px;
+        @media screen and (min-width: 1680px) {top: -1px;}
+			}
+  	}
+
+		.accord-para {
+			display: none;
+			font-style: Lato;
+		}
+
+	 .accord-para.active {display: block;}
+
+	 .twd-accordian-head {
+	  letter-spacing: 1px;
+	 	cursor: pointer;
+	 	margin-bottom: 30px;
+	 	font-family: "impact";
+	 	font-weight: 500;
+	 	letter-spacing: 0.5px;
+
+	 	@media screen and (max-width: 680px) {
+  		font-size: 16px;
+  	}
+
+	 	&:after {
+	 		content: ' ';
+	 		width: 100%;
+	 		position: absolute;
+	 		/*background: #fbcb3c;*/
+	 	}
+
+	 	&:before {
+			content: "\f107";
+			font-family: FontAwesome;
+			font-style: normal;
+			font-weight: normal;
+			text-decoration: inherit;
+			color: $btn-color;
+			font-size: 20px;
+			position: absolute;
+			top: 2px;
+			right: 30px;
+			border: 1px solid $btn-color;
+			padding: 5px 10px;
+			transform: rotate(0deg);
+
+			@media screen and (max-width: 680px) {
+				right: 0px;
+			}
+	 	}
+	 }
+
+	 .act {
+	 	color: #fbcb3c;
+    position: relative;
+    font-family: "impact";
+    font-weight: 500;
+
+    .twd-accordian-head {color: #fbcb3c;}
+
+    &:after {
+    	content: ' ';
+    	width: 100%;
+    	height: 40px;
+    	position: absolute;
+    	top: 0;
+    	right: 0;
+    	background: transparent;
+    	transition: all 2s;
+    }
+
+    &:before {
+    	transform: rotate(180deg);
+    	-webkit-transform: rotate(180deg);
+    	-moz-transform: rotate(180deg);
+    }
+	 }
+
+	 .content-go {
+	 	float: left;
+
+	 	@media screen and (max-width: 1080px) {
+	 		width: 100%;
+	 		text-align: center;
+	 	}
+	 	p {
+	 		font-size: 20px;
+	 		font-family: 'Lato', sans-serif;
+	 		text-transform: capitalize;
+	 	}
+	 }
+
+	 .go-btn {
+	 	float: right;
+	 @media screen and (max-width: 1080px) {
+	 		width: 100%;
+	 		float: none;
+	 		text-align: center;
+	 	}
+	 }
+
+	 .g-btn {
+	 	margin-top: 0;
+	 	margin-left: 15px;
+	 @media screen and (max-width: 1080px) {
+	 		margin: 15px 15px 0 0;
+	 	}
+	 }
+
+.twd-accordian-head-child {
+	position: relative;
+	 	&:before {
+			content: "\f107";
+			font-family: FontAwesome;
+			font-style: normal;
+			font-weight: normal;
+			text-decoration: inherit;
+			color: $btn-color;
+			font-size: 20px;
+			position: absolute;
+      top: 5px;
+      right: 30px;
+			padding: 5px 10px;
+			transform: rotate(0deg);
+
+			@media screen and (max-width: 680px) {
+				right: 0px;
+			}
+
+			@media screen and (max-width: 680px) {top: 12px;}
+	 	}	 
+	 	span {
+	 		color: $btn-color;
+      position: absolute;
+     font-size: 51px;
+     top: -18px;
+     left: 0;
+     @media screen and (max-width: 680px) {top: -21px;}
+	 	}
+  }
+}
+
+  .accord-group:nth-child(1) .num {display: block;}
+
+  .accord-group {margin: 30px 0;}
+
+  .event-detail-content {
+  	width: 300px;
+  }	
+}
+
+@media screen and (max-width: 680px) {
+	.twd-para {
+    font-size: 14px;
+    margin: 10px 0;
+	}
+}
+
+/*faq styling*/
+
+.main-content .faq {
+ .twd-accordian-head-child {
+ 	text-transform: inherit;
+ 	font-family: $body_font;
+ 	font-size: 20px;
+ 	font-weight: 400;
+ 	padding: 15px 0px 20px 18px;
+ 	border-top: 1px solid #ccc;
+ 	cursor: pointer;
+
+ 	@media screen and (max-width: 680px) {
+ 		font-size: 15px;
+ 		padding: 15px 20px 20px 18px;
+ 	}
+ }
+
+ .accord-para-child {
+ 	display: none;
+
+ 	.twd-para {
+ 		 margin: 0px 0 25px;
+ 		 padding-left: 18px;
+ 		 width: 95%;
+ 	 }
+ }
+}
+
+.accord-para.active {
+	border-top: 1px dashed #ccc;
+	padding-top: 15px;
+}
+
+.accord-group-child:first-child .twd-accordian-head-child {
+	border: 0;
+}
+
+.twd-accordian-head-child.act:before {
+    transform: rotate(-180deg) !important;
+    -webkit-transform: rotate(-180deg) !important;
+    -moz-transform: rotate(-180deg) !important;
+}
+
+.first-pa {text-align: center;}
